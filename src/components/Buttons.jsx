@@ -8,7 +8,7 @@ let Button = (props) => {
     var btnText;
     var eleClass;
 
-    (props.shape && props.shape == 'round' ) ? radius= '7px' : radius= '0px' ;
+    (props.shape && props.shape === 'round' ) ? radius= '7px' : radius= '0px' ;
     (props.color) ? bgColor = props.color : bgColor= '#444' ;
     (props.text) ? btnText = props.text : btnText= 'Click Me' ;
     (props.className) ? eleClass = props.className : eleClass= '' ;
