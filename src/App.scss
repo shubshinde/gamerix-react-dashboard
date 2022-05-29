@@ -1,0 +1,273 @@
+// Reset browser default
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    // border: 1px solid red;
+}
+
+// Variables
+$primaryColor: #4f28ac;
+
+// Main
+.App-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 15px;
+
+    // Sidebar
+    .App-sidebar {
+        background-color: $primaryColor;
+        flex-basis: 17%;
+        color: #fff;
+        height: 1000px;
+
+        .sidebarContent {
+            padding: 25px;
+            margin: 0 auto 0 auto;
+
+            .App-branding {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                align-items: center;
+
+                .getPrimeBtn {
+                    margin-top: 30px;
+                    padding: 12px 20px 12px 20px;
+                    font-weight: 600;
+                    background-color: #333;
+                    border: none;
+                    color: #ccc;
+                }
+            }
+
+            .categoryList {
+                margin-top: 30px;
+
+                .category {
+                    font-weight: 500;
+                    padding: 10px 0 10px 0;
+                }
+            }
+            .divider {
+                width: 90%;
+                padding: 5px;
+                border-bottom: 1.5px solid #e9d8d81f;
+            }
+            .subscriberSection {
+                margin-top: 30px;
+
+                .subscriberList {
+                    margin-top: 30px;
+                    max-height: 370px;
+                    overflow: scroll;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .subscriberCard {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        flex-wrap: nowrap;
+                        align-content: center;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 15px;
+
+                        .profileImg {
+                            width: 40px;
+                        }
+                        .subscriberInfo {
+                            .subName {
+                                color: #fff;
+                            }
+                            .subGame {
+                                font-size: 12px;
+                                color: #bfb2b2;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                .subscriberList::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Panel
+    .App-panel {
+        background-color: #eee;
+        flex-basis: 83%;
+        overflow: hidden;
+
+        .mobileBranding{
+            display: none;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: $primaryColor;
+            color: #fff;
+            
+            .App-logo{
+                
+            }
+        }
+    }
+
+    // Header
+    .Header {
+        background-color: #d2d2d2ad;
+        padding: 15px 30px 15px 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        .StreamBtn {
+            background-color: $primaryColor;
+            border: none;
+            padding: 10px 20px 10px 20px;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 7px;
+        }
+        .HeaderSearch {
+            padding: 10px;
+            border: none;
+            width: 400px;
+        }
+    }
+
+    .mainContent {
+        padding: 0px 30px 0px 30px;
+
+        .RecomendedForYouSection {
+            margin-top: 40px;
+
+            .sectionHeading {
+                margin-bottom: -30px;
+            }
+            .recomendedForYouSlider {
+                .splide__arrows {
+                    &.splide__arrows--ltr {
+                        text-align: right !important;
+
+                        .splide__arrow {
+                            border: none;
+
+                            &.splide__arrow--prev {
+                                svg {
+                                    width: 17px;
+                                    transform: rotate(180deg);
+                                }
+                            }
+                            &.splide__arrow--next {
+                                svg {
+                                    width: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .sliderItem {
+                    &.gameCard {
+                        width: 330px;
+                        height: 100%;
+
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-content: center;
+                        justify-content: center;
+                        align-items: flex-start;
+                        gap: 5px;
+
+                        .gameImage {
+                            width: 100%;
+                            height: 170px;
+                            border-radius: 10px;
+                            background-color: #ccc;
+
+                            background-size: cover !important;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        .gameFooter {
+                            width: 100%;
+
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .gameInfo {
+                                .gameTitle {
+                                    color: #555;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                }
+                                .gamePublisher {
+                                    font-size: 12px;
+                                    color: #999;
+                                    font-weight: 500;
+                                }
+                            }
+                            .gameViews {
+                                font-size: 12px;
+                                color: #999;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile Responsive
+
+@media only screen and (max-width: 600px) {
+
+    .App-wrapper{
+        display: unset;
+
+        .Header{
+            padding: 15px;
+            gap: 10px;
+
+            .logoutBtn, .StreamBtn{
+                display: none;
+            }
+        }
+        .App-sidebar{
+            display: none;
+        }
+
+        .App-panel {
+            .mobileBranding{
+                display: flex;
+            }
+        }
+
+    }
+
+    
+
+    
+}
