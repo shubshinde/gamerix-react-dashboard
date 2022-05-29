@@ -22,4 +22,4 @@ In the project directory, you can run:
 
 
 ## Demo
-Link - link.com
+Link - https://gamerix.netlify.app/
