@@ -2,18 +2,6 @@
 by Shub Shinde
 
 <br>
-<br>
-<br>
-<br>
-
-## Screenshots
-Desktop
-<img width="1908" alt="Desktop" src="https://user-images.githubusercontent.com/34902695/170878623-59072051-589a-467b-91ff-068ead0e4003.png">
-<br>
-<br>
-Mobile
-<img alt="Mobile" width="300" src="https://user-images.githubusercontent.com/34902695/170878762-de72c02a-6023-477e-a546-fd9ef6b5a028.png">
-
 
 ## Installation Steps
 1. Clone this repository.
@@ -35,6 +23,12 @@ In the project directory, you can run:
 
 
 ## Demo
-Link - https://gamerix.netlify.app/
+#### Link - https://gamerix.netlify.app/
 
+<hr>
+
+## Screenshots
+
+<img alt="Desktop" src="https://user-images.githubusercontent.com/34902695/170878623-59072051-589a-467b-91ff-068ead0e4003.png">  
+<img alt="Mobile" width="300" src="https://user-images.githubusercontent.com/34902695/170878762-de72c02a-6023-477e-a546-fd9ef6b5a028.png">
 
