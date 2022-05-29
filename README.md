@@ -1,6 +1,6 @@
-# GameRix - Gaming Dashboard
-### by Shub Shinde
-##### Version: 1.0
+# GameRix - Gaming Dashboard (v1.0)
+by Shub Shinde
+
 
 ## Installation Steps
 1. Clone this repository.
@@ -16,11 +16,10 @@
 
 ## Available Scripts
 In the project directory, you can run:
-### `npm start`
-### `npm run build`
-### `npm run eject`
+`npm start`
+`npm run build`
+`npm run eject`
 
 
 ## Demo
-
 Link - link.com
